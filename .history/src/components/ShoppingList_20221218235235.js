@@ -7,11 +7,9 @@ function ShoppingList({ items }) {
 
   const selectedItems = items.filter(item => {
     if (selectedCategory === 'All') {
-      return item
+      
     }
-    else {
-      return item.category === selectedCategory;
-    }  
+    return item.category === selectedCategory;
   })
 
   return (
@@ -25,7 +23,7 @@ function ShoppingList({ items }) {
         </select>
       </div>
       <ul className="Items">
-        {selectedItems.map((item) => (
+        {items.map((item) => (
           <Item key={item.id} name={item.name} category={item.category} />
         ))}
       </ul>

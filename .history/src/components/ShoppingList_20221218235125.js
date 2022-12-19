@@ -6,12 +6,8 @@ function ShoppingList({ items }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const selectedItems = items.filter(item => {
-    if (selectedCategory === 'All') {
-      return item
-    }
-    else {
-      return item.category === selectedCategory;
-    }  
+    if ()
+    return item.category === selectedCategory;
   })
 
   return (

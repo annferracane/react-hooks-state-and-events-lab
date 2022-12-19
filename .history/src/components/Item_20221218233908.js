@@ -4,8 +4,9 @@ function Item({ name, category, addedToCart}) {
 
   const [addedToCartClass, setAddedToCartClass] = useState("");
 
+
   function addToCartHandler(e) {
-    setAddedToCartClass(addedToCartClass === "in-cart" ? "" : "in-cart");
+    setAddedToCartClass(addedToCartClass === "in-cart" ? "" : "");
   }
 
   return (
